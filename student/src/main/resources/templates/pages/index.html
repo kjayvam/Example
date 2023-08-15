@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page</title>
+    <th:block th:replace="layout/header :: blue-styles"></th:block>
+    <th:block th:replace="layout/header :: red-styles" th:if="${headerStyle == 'red'}"></th:block>
+</head>
+<body>
+
+<header th:replace="layout/header :: header-content"></header>
+
+<h1 class="blue-text" th:classappend="${headerStyle == 'red'}? 'red-text'">Welcome to the First Page!</h1>
+<p th:text="${message}"></p>
+
+<div th:replace="layout/footer :: footer"></div>
+
+</body>
+</html>
+
