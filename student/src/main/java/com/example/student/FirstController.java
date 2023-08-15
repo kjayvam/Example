@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class FirstController {
 
     //    처음 시작할 때 사용하는 html 지정
-    @GetMapping("/")
+    @GetMapping("/index")
     public String firstHTML() {
         return "index";
     }

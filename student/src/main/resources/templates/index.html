@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-index.html
+<div th:replace="layout :: header"></div>
+
+<div th:replace="layout :: content">
+    <!-- 페이지 특정 컨텐츠 내용 -->
+    index.html
+</div>
+
+<div th:replace="layout :: footer"></div>
 </body>
 </html>
