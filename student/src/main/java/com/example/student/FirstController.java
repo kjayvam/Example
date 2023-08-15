@@ -7,6 +7,6 @@ public class FirstController {
     //    처음 시작할 때 사용하는 html 지정
     @GetMapping("/")
     public String firstHTML() {
-        return "hello";
+        return "index";
     }
 }
