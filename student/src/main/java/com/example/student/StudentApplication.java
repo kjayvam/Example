@@ -1,4 +1,3 @@
-/*
 package com.example.student;
 
 import org.springframework.boot.SpringApplication;
@@ -12,4 +11,3 @@ public class StudentApplication {
     }
 
 }
-*/
