@@ -5,7 +5,17 @@
     <title>Thymeleaf Example</title>
 </head>
 <body>
-<h1>Welcome to the First Page!</h1>
-<p th:text="${message}"></p>
+
+<div th:replace="layout :: header"></div>
+
+<div th:replace="layout :: content">
+    <<<<<<< HEAD
+    <h1>Welcome to the First Page!</h1>
+    <p th:text="${message}"></p>
+    =======
+</div>
+
+<div th:replace="layout :: footer"></div>
+>>>>>>> FE
 </body>
 </html>
