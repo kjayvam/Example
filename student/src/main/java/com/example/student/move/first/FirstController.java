@@ -11,6 +11,6 @@ public class FirstController {
     @GetMapping("/index")
     public String firstPage(Model model) {
         model.addAttribute("message", "Hello from the controller!");
-        return "pages/index";
+        return "articles/index";
     }
 }
